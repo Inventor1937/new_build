@@ -85,6 +85,9 @@ function check_product()
     fi
     export XTENDED_BUILD
 
+    # Export for lld
+    export USE_CLANG_LLD=true
+
         TARGET_PRODUCT=$1 \
         TARGET_BUILD_VARIANT= \
         TARGET_BUILD_TYPE= \
